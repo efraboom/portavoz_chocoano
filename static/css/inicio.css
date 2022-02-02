@@ -1,0 +1,123 @@
+/* Decoración para el titulo*/
+@font-face {
+    font-family: secundariadelgada;
+    src: url(../fonts/M_PLUS/MPLUS1p-Light.ttf);
+}
+
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #DDDDDD;
+
+    
+    --grisNeomorfismo: #f8f8f8;
+
+    --HeaderDegradoUno: #7162FE;
+    --HeaderDegradoDos: #746eff;
+    --resta: calc(-100% / 3);
+}
+
+
+.main {
+    padding: 6rem 0 2rem 0;
+    /*margin-top: 10.7rem;*/
+    background-color: #FbFbFb;
+}
+
+.adorno {
+    display: flex;
+    justify-content: center;
+}
+span {
+    position: absolute;
+    width: 14rem;
+    background-color: var(--gris);
+    height: .25rem;
+    transition: .5s ease;
+}
+em {
+    position: absolute;
+    top: 0;
+    width: 8rem;
+    left: calc(100% / 4.8);
+    height: .25rem;
+    background-color: var(--HeaderDegradoUno);
+    transition: .5s ease;
+}
+.contenido__titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenido__titulos--h2 {
+    font-size: 4.8rem;
+    /* font-family: 'M PLUS 1p', sans-serif; */
+    font-weight: lighter;
+    margin-top: 2.9rem;
+    transition: .5s ease;
+}
+.contenido__titulos--h3 {
+    font-family: secundariadelgada;
+    font-size: 3rem;
+    text-align: center;
+    transition: .5s ease;
+}
+/** Carrusel **/
+.splide {
+    margin: 4.4rem auto 8.8rem;
+}
+
+.splide__element {
+    padding: 1.5rem;
+    background-color: var(--blanco);
+    border-radius: .3rem;
+    border-top: .2rem solid var(--grisNeomorfismo);
+    box-shadow:  0px 0px 15px 7px rgba(0, 0, 0, 15.5%);
+    /* -14px 0px 2px #f8f8f8, 14px 0px 2px #f8f8f8 */
+}
+.splide__element a{
+    color: #7162fe; 
+    font-family:secundariaRegular;
+    font-size: 23px;
+}
+.splide__element p{
+    font-size: 18px; 
+    font-family:secundariaRegular;
+}
+
+/*--> Media Query's <--*/
+
+/* Para Tablets */
+@media (max-width: 800px) {
+    .contenido__titulos--h2 {
+        font-size: 3.8rem;
+    }
+    .contenido__titulos--h3 {
+        font-size: calc(3.8rem / 1.9);
+    }
+    span {
+        width: 10rem;
+    }
+    em {
+        width: 6rem;
+        left: calc(100% / 5);
+    }
+}
+/* Para celulares */
+@media (max-width: 500px) {
+    .contenido__titulos--h2 {
+        font-size: 2.8rem;
+    }
+    .contenido__titulos--h3 {
+        font-size: calc(2.8rem / 1.5);
+    }
+    span {
+        width: 8rem;
+    }
+    em {
+        width: 4rem;
+        left: calc(100% / 3.9);
+    }
+}

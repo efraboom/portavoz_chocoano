@@ -1,0 +1,31 @@
+
+{% load static %}
+
+<nav class="menu"> 
+    <section class="menu__contenedor centrado">
+        <a class="menu__logo" style="color: #fff" href="{% url 'inicio' %}" title="Página principal de Portavoz Afro-Indígena">Portavoz Afro-Indígina</a>
+
+            <ul class="menu__enlaces">
+
+                <li class="menu__item"><a class="menu__enlace" href="{% url 'inicio' %}" title="Página principal">Inicio</a></li>
+    
+                <li class="menu__item"><a class="menu__enlace" href="{% url 'info' %}">Acerca de</a></li>
+                        
+    
+                    <!-- <li class="menu__item">
+                        <a class="menu__enlace" href="#" title="Acceder">
+                            <img src="<?= base_url();?>/public/iconos/acceder.svg">
+                        </a>
+                    </li> -->
+            </ul>
+
+        <div class="menu__hamburguesa">
+            <img src="{% static 'icons/menu_blanco.svg' %}" class="menu__img" alt="Menú Hamburguesa" title="Menú">
+        </div>
+    </section>
+
+</nav>
+
+
+
+

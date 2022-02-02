@@ -1,0 +1,52 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+	<title>Portavoz Afro-Indígena</title>
+	<meta name="description" content="Diccionario de la jerga chocoana">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	
+	<!-- Estilos css -->
+	<link rel="stylesheet" href="{% static 'css/not_found.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/header.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/inicio.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/palabra.css' %}" type="text/css">
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="{% static 'css/all.min.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}" type="text/css">
+	
+	<!-- Librerias -->
+	<!-- <link rel="stylesheet" href="<?= base_url();?>/public/css/glider.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="{% static 'css/splide.min.css' %}" type="text/css">
+
+	<!-- Librerias -->
+	<!-- <link rel="stylesheet" href="<?= base_url();?>/public/css/normalize.css" type="text/css"> -->
+
+	<!-- Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+			<!-- Contenido -->
+			{% block content %}
+	
+			{% endblock %}
+
+
+			{% include 'partials/footer.html' %}<!--FOOTER-->
+
+		<!-- Librerias -->
+		<!-- <script src="<?= base_url();?>/public/js/glider.min.js"></script> -->
+
+		<script src="{% static 'js/splide.min.js' %}"></script>
+
+		<!-- Js-app -->
+		<script src="{% static 'js/app.js' %}"></script>
+    </body>
+</html>

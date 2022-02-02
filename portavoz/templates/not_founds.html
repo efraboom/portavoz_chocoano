@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+{% load static %}<!--CARGANDO ARCHIVOS ESTATICOS-->
+
+{% include 'partials/navegacion.html' %}<!--NAVBAR-->
+
+<main class="main__404 centrado">
+    <div class="section__404">
+        <div class="section__404--imagen">
+            <img src="{% static 'icons/404.svg' %}" class="imagen__404" alt="">
+        </div>
+        <div class="section__404--texto">
+            <h2 class="texto__404--h2">Página no encontrada</h2>
+
+            <p class="texto__404--p">Lo sentimos, no hemos podido encontrar lo que estas buscando</p>
+            <!-- <p class="texto__404--p">Lo sentimos, la página que estás buscando no se pudo encontrar</p> -->
+
+            <a class="btn texto__404--a" href="{% url 'inicio' %}">Volver a Inicio</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

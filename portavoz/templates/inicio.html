@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+{% load static %}
+<header id="header">
+	{% include 'partials/navegacion.html' %}<!--NAVBAR-->
+<section class="contenedor__header centrado">
+    <h1 class="titulo__header">Bienvenido al diccionario digital: El Portavoz Afro-Indígena. <br> "Un dialecto que une territorios"</h1>
+
+
+	<!--BUSCADOR-->
+    {% include 'partials/buscador.html' %}<!--BUSCADOR-->
+	<!--BUSCADOR-->
+
+    <div class="contenedor__texto--header">
+        <p class="palabras__ejemplos">Ejemplos: 
+            <a href="#" class="palabra__ejemplo">Bujú,</a> 
+            <a href="#" class="palabra__ejemplo">Guayabo</a>
+        </p>
+        <div class="expresiones">
+            <a href="{% url 'indigena' %}" class="expresiones__indigena--afro expresiones__indigena">Indígena</a>
+            <a href="{% url 'afro' %}" class="expresiones__indigena--afro expresiones__afro">Afro</a>
+        </div>
+        <div class="imagen__fondo"></div>
+    </div>
+    <figure class="figura">
+        <img src="{% static 'img/humano.png' %}" class="figura__imagen" alt="Grupo de Personas en Dibujo">
+    </figure>
+</section>
+</header>
+
+<main class="main">
+	
+	<!--PALABRASMAS BUSCADAS-->
+	<section class="contenido centrado">
+		<div class="adorno">	
+			<span><em></em></span>
+		</div>
+		<div class="contenido__titulos">
+			<h2 class="contenido__titulos--h2">Palabras más buscadas</h2>
+			<h3 class="contenido__titulos--h3">Descubre las palabras más buscadas por usuarios como tú</h3>
+		</div>
+	</section>
+	<article class="carrusel">
+		<div class="splide">
+			<div class="splide__track centrado">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<div class="splide__element">
+							<a href="#">Titulo 1.</a>
+						<br>
+						<br>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nobis suscipit, totam repudiandae officia, vero debitis eaque cupiditate distinctio rem quia repellat ipsum.</p>
+						<br>
+						<br>
+						<a href="#">+ informacion</a>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="splide__element">
+						<a href="#">Titulo 2.</a>
+						<br>
+						<br>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nobis suscipit, totam repudiandae officia, vero debitis eaque cupiditate distinctio rem quia repellat ipsum.</p>
+						<br>
+						<br>
+						<a href="#">+ informacion</a>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="splide__element">
+						<a href="#">Titulo 3.</a>
+						<br>
+						<br>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nobis suscipit, totam repudiandae officia, vero debitis eaque cupiditate distinctio rem quia repellat ipsum.</p>
+						<br>
+						<br>
+						<a href="#">+ informacion</a>
+				</div>
+			</li>
+			</ul>
+		</div>
+	</div>
+</article>
+<!--PALABRASMAS BUSCADAS-->
+</main>
+
+
+{% endblock %}

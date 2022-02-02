@@ -1,0 +1,59 @@
+
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+{% load static %}<!--CARGANDO ARCHIVOS ESTATICOS-->
+
+
+    {% include 'partials/navegacion.html' %}<!--NAVBAR-->
+
+<div class="acerca__introduccion ">
+    <h2 class="introduccion__titulo centrado">Te damos la bienvenida a conocer<br>
+         e integrarte en nuestra cultura</h2>
+    <!-- <img src="img/fondo_3.png" class="introduccion__imagen" alt="fondo"> -->
+</div>
+<main class="acerca">
+    <div class="fondo">
+        <div class="xy centrado">
+            <section class="acerca__titulos centrado">
+                <h2 class="acerca__titulo">Nuestra Historia</h2>
+                <span class="acerca__titulo--estilo"></span>
+
+                <p class="acerca__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident illum hic expedita obcaecati? Ratione eligendi error dolorem neque quae voluptas consequatur qui fugiat accusantium aliquam aspernatur, eum amet nulla perspiciatis.</p>
+            </section>
+
+            <img src="{% static 'img/fondo.svg' %}" class="acerca__imagen centrado" alt="">
+        </div>
+    </div>
+    
+        <article class="apoya centrado">
+            
+            <section class="apoya__titulos">
+                <h2 class="apoya__titulo">Nos Apoyan</h2>
+                <span class="apoya__titulo--estilo"></span>
+                <p class="apoya__parrafo">Provident illum hic expedita obcaecati? Ratione eligendi error Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolorem neque quae voluptas consequatur qui fugiat accusantium aliquam aspernatur, eum amet nulla perspiciatis.</p>
+            </section>
+            
+            <section class="empresa MdC">
+                <a href="https://www.mincultura.gov.co/" target="_blank" rel="noreferrer noopener"><img src="{% static 'img/Min_Color.png' %}" class="empresa__img" alt=""></a>
+                
+                <h3 class="empresa__titulo">Ministerio de Cultura</h3>
+                <!-- <p class="empresa__descripcion">Lorem ipsum dolor sit amet.</p> -->
+            </section>
+            <section class="empresa RnB">
+                <a href="https://bibliotecanacional.gov.co/es-co" target="_blank" rel="noreferrer noopener"><img src="{% static 'img/Red_Nacional_Bibliotecas.svg' %}" class="empresa__img RnB__img" alt=""></a>
+                <h3 class="empresa__titulo">Red Nacional de Bibliotecas</h3>
+                <!-- <p class="empresa__descripcion">Lorem ipsum dolor sit amet.</p> -->
+            </section>
+            <section class="empresa">
+                <img src="{% static 'img/Logo_3.png' %}" class="empresa__img BdA" alt="">
+                <!-- <h3 class="empresa__titulo">Numero 3</h3>
+                <p class="empresa__descripcion">Lorem ipsum dolor sit amet.</p> -->
+            </section>
+    </article>
+</main>
+
+
+{% endblock %}

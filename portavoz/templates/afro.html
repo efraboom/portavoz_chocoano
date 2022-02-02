@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+{% include 'partials/navegacion.html' %}<!--NAVBAR-->
+{% include 'partials/buscador.html' %}<!--BUSCADOR-->
+
+<h1 class="titulo__resultado">Palabras Afro</h1>
+
+
+{% for palabra in palabras %}
+
+<article class="targeta centrado">
+<div class="targeta__contenido">
+    <h3 class="contenido__nombre">{{palabra.nombre}}</h3>
+    <p class="contenido__tipo">{{palabra.tipo}}</p>
+    <p class="contenido__significado">{{palabra.significado}}</p>
+</div>
+</article>
+
+{% endfor %}
+
+{% endblock %}
