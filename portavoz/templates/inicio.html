@@ -5,7 +5,7 @@
 <header id="header">
 	{% include 'partials/navegacion.html' %}<!--NAVBAR-->
 <section class="contenedor__header centrado">
-    <h1 class="titulo__header">Bienvenido al diccionario digital: El Portavoz Afro-Indígena. <br> "Un dialecto que une territorios"</h1>
+    <h1 class="titulo__header">Bienvenido al diccionario El Portavoz Chocoano: <br> "Un dialecto que une territorios"</h1>
 
 
 	<!--BUSCADOR-->
@@ -18,11 +18,11 @@
             <a href="#" class="palabra__ejemplo">Guayabo</a>
         </p>
         <div class="expresiones">
-            <a href="{% url 'indigena' %}" class="expresiones__indigena--afro expresiones__indigena">Indígena</a>
+            <a href="{% url 'indigena' %}" class=" expresiones__indigena--afro expresiones__indigena">Embera</a>
             <a href="{% url 'afro' %}" class="expresiones__indigena--afro expresiones__afro">Afro</a>
         </div>
         <div class="imagen__fondo"></div>
-    </div>
+    </div> 
     <figure class="figura">
         <img src="{% static 'img/humano.png' %}" class="figura__imagen" alt="Grupo de Personas en Dibujo">
     </figure>
@@ -34,11 +34,11 @@
 	<!--PALABRASMAS BUSCADAS-->
 	<section class="contenido centrado">
 		<div class="adorno">	
-			<span><em></em></span>
+			<span class="span"><em></em></span>
 		</div>
 		<div class="contenido__titulos">
-			<h2 class="contenido__titulos--h2">Palabras más buscadas</h2>
-			<h3 class="contenido__titulos--h3">Descubre las palabras más buscadas por usuarios como tú</h3>
+			<h2 class="contenido__titulos--h2">Palabras Que deberias conocer</h2>
+			<h3 class="contenido__titulos--h3">Aprende un poco sobre las palabras de nuestro territorio</h3>
 		</div>
 	</section>
 	<article class="carrusel">

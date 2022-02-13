@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
 }
-span {
+.span {
     position: absolute;
     width: 14rem;
     background-color: var(--gris);

@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5.6rem;
+    gap: 4rem;
     height: 34rem;
     /*margin-top: 4.8rem;*/
     width: 100%;
@@ -26,7 +26,7 @@
 .footer__titulos {
     position: relative;
     top: 2rem;
-    gap: 10.4rem;
+    gap: 8.4rem;
     transition: .4s ease;
 }
 .footer__titulo {
@@ -78,6 +78,52 @@
     color: rgba(255, 255, 255, .75);
     font-size: 1.3rem;
 }
+.creative_enlace{
+    text-decoration: none;
+    color: var(--blanco);
+}
+.creativo_icon{
+    margin-top: 1rem;
+}
+
+/*LICENCIA CREATIVE COMMOS*/
+.licencia{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    max-width: 70%;
+}
+.licencia__a{
+    color:var(--blanco);
+    margin-left: 1rem;
+    text-align: center;
+}
+.footer__organizaciones{
+    display: flex;
+    gap: 5rem;
+}
+.footer__copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__logos-img{
+    height: 5rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+
+
 /*--> Media Query's <--*/
 
 /* Para Tablets */
@@ -103,13 +149,27 @@
     .footer__copyright {
         bottom: 0;
     }
+    .licencia{
+        width: 90%;
+    }
+
 }
 /* XS */
 @media (max-width: 600px) {
     .footer__titulos {
-        gap: 4.4rem;
+        gap: 1.4rem;
     }
     .footer__titulo {
         font-size: 1rem;
+    }
+    .licencia{
+        width: 90%;
+    }
+    .footer__logos-img{
+        height: 2.5rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 }

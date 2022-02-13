@@ -24,6 +24,7 @@ from portavoz import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.inicio, name='inicio'),
+    #path('resultados', views.Resultados.as_view(), name='resultados'),
     path('resultados', views.resultados, name='resultados'),
     path('acerca-de', views.acerca_de, name='info'),
     path('afro', views.afro, name='afro'),

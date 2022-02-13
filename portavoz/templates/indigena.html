@@ -16,11 +16,17 @@
 
 <article class="targeta centrado">
 <div class="targeta__contenido">
-    <h3 class="contenido__nombre">{{palabra.nombre}}</h3>
+    <h3 class="contenido__nombre">{{palabra.nombre}} 
+        <span class="clase__palabra">
+            ({{palabra.clasificacion}})
+        </span>
+    </h3>
     <p class="contenido__tipo">{{palabra.tipo}}</p>
     <p class="contenido__significado">{{palabra.significado}}</p>
 </div>
 </article>
+
+{% include 'partials/paginador.html' %}
 
 {% endfor %}
 

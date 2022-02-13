@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.db.models import Q
 from portavoz.models import Palabra
-from django.core.paginator import Paginator
+from django.views.generic import ListView
+from django.core.paginator import Paginator,EmptyPage, PageNotAnInteger
+
 # Create your views here.
 
 #Inicio
@@ -20,7 +22,7 @@ def mi_error_404(request,exception):
 #Resultados
 def resultados(request):
     busqueda = request.GET.get('busqueda') #Obtiene las palabras escritas en el buscador
-    palabras = Palabra.objects.filter(nombre=busqueda)
+    #palabras = Palabra.objects.filter(nombre=busqueda)
     #palabras = Palabra.objects.all()
 
     if busqueda:
@@ -30,18 +32,65 @@ def resultados(request):
             Q(significado__icontains  = busqueda)
         ).distinct()
 
-    paginator = Paginator(palabras,2)
-    page = request.GET.get('page') or 1
-    palabras = paginator.get_page(busqueda)
+    #Paginador
 
-    return render(request, 'resultados.html', {'palabras': palabras})
+    paginator = Paginator(palabras, 2)
+    page = request.GET.get("page", 1)
+
+    try:
+        palabras = paginator.page(page)
+    except PageNotAnInteger:
+        palabras = paginator.page(1)
+    except EmptyPage:
+        palabras = paginator.page(paginator.num_pages)
+
+
+
+
+
+    return render(request, 'resultados.html',{'palabras': palabras})
+
+    
+
+    #return render(request, 'resultados.html', {'palabras': palabras})
+'''class Resultados(ListView):
+    template_name = 'resultados.html'
+    model = Palabra
+    context_objetc_name = 'palabras'
+
+    def buscar_palabra(self):
+        busqueda = self.request.GET.get("busqueda","") #Obtiene las palabras escritas en el buscador
+        palabra = Palabra.objects.filter(
+        Q(nombre__icontains = busqueda) |
+        Q(tipo__icontains  = busqueda) |
+        Q(significado__icontains  = busqueda)
+        ).distinct()
+        print('resultado: ', palabra )
+        return palabra
+'''    
+
 
 
 #RESULTADOS AFRO E INDIGENA
 def afro(request):
-    palabras = Palabra.objects.filter(clasificacion='choco')
+    palabras = Palabra.objects.filter(clasificacion='afro')
+
+    #Paginador
+
+    paginator = Paginator(palabras, 2)
+    page = request.GET.get("page", 1)
+
+    try:
+        palabras = paginator.page(page)
+    except PageNotAnInteger:
+        palabras = paginator.page(1)
+    except EmptyPage:
+        palabras = paginator.page(paginator.num_pages)
+
+        
     return render(request, 'afro.html', {'palabras': palabras})
 
 def indigena(request):
     palabras = Palabra.objects.filter(clasificacion='embera')
     return render(request, 'indigena.html',{'palabras': palabras})
+ 
