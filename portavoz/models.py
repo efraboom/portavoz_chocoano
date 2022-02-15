@@ -9,7 +9,7 @@ class Palabra(models.Model):
     significado = TextField()
     clasificaciones = [
         ('afro', 'Afro'), 
-        ('embera', 'Embera')
+        ('Embera Dóbida', 'Embera Dóbida')
     ]
     clasificacion = CharField(max_length=16, choices=clasificaciones, default='afro') 
 

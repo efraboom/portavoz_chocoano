@@ -32,65 +32,29 @@ def resultados(request):
             Q(significado__icontains  = busqueda)
         ).distinct()
 
-    #Paginador
+    # Set up paginator
+    p = Paginator(palabras, 10)
+    page = request.GET.get('page')
+    verbal = p.get_page(page)
 
-    paginator = Paginator(palabras, 2)
-    page = request.GET.get("page", 1)
-
-    try:
-        palabras = paginator.page(page)
-    except PageNotAnInteger:
-        palabras = paginator.page(1)
-    except EmptyPage:
-        palabras = paginator.page(paginator.num_pages)
-
-
-
-
-
-    return render(request, 'resultados.html',{'palabras': palabras})
-
-    
-
-    #return render(request, 'resultados.html', {'palabras': palabras})
-'''class Resultados(ListView):
-    template_name = 'resultados.html'
-    model = Palabra
-    context_objetc_name = 'palabras'
-
-    def buscar_palabra(self):
-        busqueda = self.request.GET.get("busqueda","") #Obtiene las palabras escritas en el buscador
-        palabra = Palabra.objects.filter(
-        Q(nombre__icontains = busqueda) |
-        Q(tipo__icontains  = busqueda) |
-        Q(significado__icontains  = busqueda)
-        ).distinct()
-        print('resultado: ', palabra )
-        return palabra
-'''    
-
-
+    return render(request, 'resultados.html',{'palabras': palabras, 'verbal': verbal, 'busqueda':busqueda}) 
 
 #RESULTADOS AFRO E INDIGENA
 def afro(request):
     palabras = Palabra.objects.filter(clasificacion='afro')
 
-    #Paginador
-
-    paginator = Paginator(palabras, 2)
-    page = request.GET.get("page", 1)
-
-    try:
-        palabras = paginator.page(page)
-    except PageNotAnInteger:
-        palabras = paginator.page(1)
-    except EmptyPage:
-        palabras = paginator.page(paginator.num_pages)
-
-        
-    return render(request, 'afro.html', {'palabras': palabras})
+    # Set up paginator
+    p = Paginator(palabras, 10)
+    page = request.GET.get('page')
+    verbal = p.get_page(page)
+    return render(request, 'afro.html', {'palabras': palabras, 'verbal': verbal})
 
 def indigena(request):
-    palabras = Palabra.objects.filter(clasificacion='embera')
-    return render(request, 'indigena.html',{'palabras': palabras})
+    palabras = Palabra.objects.filter(clasificacion='Embera Dóbida')
+
+    # Set up paginator
+    p = Paginator(palabras, 10)
+    page = request.GET.get('page')
+    verbal = p.get_page(page)
+    return render(request, 'indigena.html', {'palabras': palabras, 'verbal': verbal})
  

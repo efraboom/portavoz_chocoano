@@ -1,6 +1,6 @@
-{% load static %}
+{% load static %} 
 
-<form action="{% url 'resultados' %}" method="GET" class="buscador">
+<form action="{% url 'resultados' %}" method="GET" class="buscador">{% csrf_token %}
     <div class="contenido__buscador">
         <input name="busqueda" type="text" class="buscador__input buscar" id="busqueda" placeholder="Buscar palabra o frase...">
         <span class="borrar" onclick="document.getElementById('busqueda').value = '' "></span>

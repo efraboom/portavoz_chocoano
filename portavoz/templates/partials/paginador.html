@@ -1,44 +1,17 @@
 {% load static %}
 <!--Paginador-->
-
-{% if palabras.has_other_pages %}
-<nav aria-label="Score pagination" class="mb-6 paginador">
-    <ul class="pagination col-12">
-        {% if palabras.has_previous%}
-        <li class="page-item">
-                             <a class="page-link" href="?page={{ all_scores.previous_page_number }}"> Anterior </a>
-        </li>
-        {% else %}
-        <li class="page-item disabled">
-                             <span class = "page-link"> Anterior </span>
-        </li>
+<div class="content">
+    <div class="paginate">
+        {% if verbal.has_previous %}
+                <a class="page__enlace" href="?page=1">&laquo; Primera</a>    
+                <a class="page__enlace" href="?page={{ verbal.previous_page_number}}">Anterior</a>    
         {% endif %}
-
-        {% for page_num in palabras.paginator.page_range %}
-            {% if palabras.number == page_num %}
-                <li class="page-item active">
-                    <span class="page-link">
-                        {{ page_num }}
-                        <span class="sr-only">(current)</span>
-                    </span>
-                </li>
-            {% else %}
-                <li class="page-item">
-                    <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-
-        {% if palabras.has_next %}
-            <li class="page-item">
-                                     <a class="page-link" href="?page={{ palabras.next_page_number }}"> Siguiente </a>
-            </li>
-        {% else %}
-            <li class="page-item disabled">
-                                     <span class = "page-link"> Siguiente </span>
-            </li>
+        <span class="page__span">Pagina {{ verbal.number }} de {{ verbal.paginator.num_pages }}</span>
+        
+        {% if verbal.has_next %}
+            <a class="page__enlace" href="?page={{ verbal.next_page_number }}">Siguiente</a>
+            <a class="page__enlace" href="?page={{ verbal.paginator.num_pages }}">Última&raquo;</a>
         {% endif %}
-    </ul>
-</nav>
-{% endif %}
+    </div>
+</div>
 <!--Paginador-->

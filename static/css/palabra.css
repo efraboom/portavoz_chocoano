@@ -1,3 +1,16 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #DDDDDD;
+    --HeaderDegradoUno: #7162FE;
+    --HeaderDegradoDos: #746eff;
+
+    --paddingBoton: 1.25rem 2.4rem;
+
+    --BotonBuscar: #FFD523;
+    --BotonBuscarHover: #FFC107;
+}
+
 @font-face {
     font-family: fuentePrincipal;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -13,7 +26,7 @@
 }
 .targeta{
     width: 70%;
-    background-color: #ffffff ;
+    background-color: #ffffff;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 0.8rem;
@@ -54,7 +67,6 @@
 
 }
 
-
 .contenido__significado{
     font-size: 1.6rem;
     font-family: secundariaRegular;
@@ -66,6 +78,68 @@
 .pagination{
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
 }
+
+/*Resultado no encontrado*/
+.resultados__error{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+
+}
+.resultados__error--img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.resultados__error--texto{
+    font-size: 10rem;
+    color: var(--HeaderDegradoUno);
+    font-family: secundariaBold;
+}
+.resultados__error--span{
+    font-size: 5rem;
+    line-height: 1;
+    color: #333;
+    font-family: secundariaRegular;
+}
+/*-------PAGINACION-------*/
+.content{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.paginate{
+    width: 45%;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.page__span{
+    color: #333333;
+    font-family: secundariaBold;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+.page__enlace{
+    text-decoration: none;
+    color: var(--HeaderDegradoUno);
+    font-family: secundariaBold;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-size: 1.6rem;
+}
+.page__enlace:hover{
+    color: #FFC107;
+
+}
+
+/*-------PAGINACION-------*/
+
 /*MEDIA QUERYES*/
 
 /* Para Tablets */
@@ -78,6 +152,41 @@
     .targeta{
         width: 90%;
     }
+    /*-------PAGINACION-------*/
+    .content{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .paginate{
+        width: 60%;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    }
+    .page__span{
+        color: #333333;
+        font-family: secundariaBold;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .page__enlace{
+        text-decoration: none;
+        color: var(--HeaderDegradoUno);
+        font-family: secundariaBold;
+        margin-left: .2rem;
+        margin-right: .2rem;
+        font-size: 1rem;
+    }
+    .page__enlace:hover{
+        color: #FFC107;
+    }
+    /*-------PAGINACION-------*/
+
+    
 }
 /* Para celulares */
 @media (max-width: 500px) {
@@ -89,6 +198,40 @@
     .targeta{
         width: 90%;
     }
+    /*-------PAGINACION-------*/
+    .content{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .paginate{
+        width: 90%;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    }
+    .page__span{
+        color: #333333;
+        font-family: secundariaBold;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .page__enlace{
+        text-decoration: none;
+        color: var(--HeaderDegradoUno);
+        font-family: secundariaBold;
+        margin-left: .2rem;
+        margin-right: .2rem;
+        font-size: 1rem;
+    }
+    .page__enlace:hover{
+        color: #FFC107;
+
+    }
+    /*-------PAGINACION-------*/
 }
 @media (max-width: 300px) {
     .info__contenedor {
