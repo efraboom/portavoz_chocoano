@@ -1,36 +1,32 @@
+import random
 from django.shortcuts import render
-from django.shortcuts import render, redirect
 from django.db.models import Q
 from portavoz.models import Palabra
-from django.views.generic import ListView
-from django.core.paginator import Paginator,EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator
+from django.views.generic import TemplateView
 
-# Create your views here.
 
 #Inicio
 def inicio(request):
-    return render(request, 'inicio.html')
+    palabras = Palabra.objects.all()
+    muestra = Palabra.objects.filter(id__range=[800,805])
+    return render(request, 'inicio.html',{'muestra':muestra})
 
 #Acerca de 
 def acerca_de(request):
     return render(request, 'acerca_de.html')
 
-#Eror 404
-def mi_error_404(request,exception):
-    return render(request, 'not_founds.html', status=404) 
 
 #Resultados
 def resultados(request):
     busqueda = request.GET.get('busqueda') #Obtiene las palabras escritas en el buscador
-    #palabras = Palabra.objects.filter(nombre=busqueda)
-    #palabras = Palabra.objects.all()
 
     if busqueda:
         palabras = Palabra.objects.filter(
             Q(nombre__icontains = busqueda) |
             Q(tipo__icontains  = busqueda) |
             Q(significado__icontains  = busqueda)
-        ).distinct()
+        ).distinct()#Filtra las busquedas
 
     # Set up paginator
     p = Paginator(palabras, 10)
@@ -58,3 +54,25 @@ def indigena(request):
     verbal = p.get_page(page)
     return render(request, 'indigena.html', {'palabras': palabras, 'verbal': verbal})
  
+#Eror 404
+'''def mi_error_404(request,exception):
+    return render(request, 'not_founds.html', status=404) '''
+
+#Errores 404 - 505
+class ErrorView(TemplateView):
+    template_name = "not_founds.html"
+class Error505View(TemplateView):
+    template_name = "not_founds.html"
+    
+    @classmethod
+    def as_error_view(cls):
+        v = cls.as_view()
+        def view(request):
+            r = v(request)
+            r.render()
+            return r
+        return view
+
+
+    
+

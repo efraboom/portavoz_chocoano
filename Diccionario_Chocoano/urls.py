@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-from portavoz.views import mi_error_404 
-from django.conf.urls import handler404
+from portavoz.views import ErrorView,Error505View 
+from django.conf.urls import handler404,handler500
 from portavoz import views
 
 urlpatterns = [
@@ -33,4 +33,5 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = mi_error_404
+handler404 =  ErrorView.as_view()
+handler500 = Error505View.as_error_view()

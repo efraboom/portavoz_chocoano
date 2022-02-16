@@ -4,12 +4,13 @@
 
 {% load static %}
 {% include 'partials/navegacion.html' %}<!--NAVBAR-->
-{% include 'partials/buscador.html' %}<!--BUSCADOR-->
 
-{% if palabras %}
+    {% include 'partials/buscador.html' %}<!--BUSCADOR-->
+    
+    {% if palabras %}
     <h1 class="titulo__resultado">Resultados</h1>
     {% for palabra in verbal %}
-
+    
     <article class="targeta centrado">
         <div class="targeta__contenido">
             <h3 class="contenido__nombre">{{palabra.nombre}}
@@ -18,36 +19,39 @@
             <p class="contenido__tipo">{{palabra.tipo}}</p>
             <p class="contenido__significado">{{palabra.significado}}</p>
         </div>
-        </article>
+    </article>
     {% endfor %}
-
+    
     {% else %}
     <!--RESULTADOS NO ENCONTRADOS-->
     {% include 'partials/error_busqueda.html' %}
     <!--RESULTADOS NO ENCONTRADOS-->
     
-{% endif %}
-
-<!--Paginador-->
-<div class="content">
-    <div class="paginate">
-        {% if verbal.has_previous %}
-                <a class="page__enlace" href="?busqueda={{ busqueda }}&&page=1">&laquo; Primera</a>    
-                <a class="page__enlace" href="?busqueda={{ busqueda }}&&page={{ verbal.previous_page_number}}">Anterior</a>    
-        {% endif %}
-        <span class="page__span">Pagina {{ verbal.number }} de {{ verbal.paginator.num_pages }}</span>
-        
-        {% if verbal.has_next %}
+    {% endif %}
+    
+    <!--Paginador-->
+    {% if verbal.paginator.num_pages > 1 %}
+    <div class="content">
+        <div class="paginate">
+            {% if verbal.has_previous %}
+            <a class="page__enlace" href="?busqueda={{ busqueda }}&&page=1">&laquo; Primera</a>    
+            <a class="page__enlace" href="?busqueda={{ busqueda }}&&page={{ verbal.previous_page_number}}">Anterior</a>    
+            {% endif %}
+            <span class="page__span">Pagina {{ verbal.number }} de {{ verbal.paginator.num_pages }}</span>
+            
+            {% if verbal.has_next %}
             <a class="page__enlace" href="?busqueda={{ busqueda }}&&page={{ verbal.next_page_number }}">Siguiente</a>
             <a class="page__enlace" href="?busqueda={{ busqueda }}&&page={{ verbal.paginator.num_pages }}">Última&raquo;</a>
-        {% endif %}
+            {% endif %}
+        </div>
     </div>
-</div>
-<!--Paginador-->
+    {% endif %}
+    <!--Paginador-->
 
-
-
-
-
+    
+    
+    
+    
+    
 
 {% endblock %}

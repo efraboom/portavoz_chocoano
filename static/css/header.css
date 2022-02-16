@@ -333,7 +333,7 @@ input[type=text]:placeholder-shown ~ .borrar{ /* :placeholder-shown: comprueba s
         font-size: 1.52rem;
     }
     .buscador {
-        width: 20rem;
+        width: 25rem;
     }
     .buscar {
         height: 4rem;

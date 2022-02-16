@@ -5,7 +5,7 @@
 <header id="header">
 	{% include 'partials/navegacion.html' %}<!--NAVBAR-->
 <section class="contenedor__header centrado">
-    <h1 class="titulo__header">Bienvenido al diccionario El Portavoz Chocoano: <br> "Un dialecto que une territorios"</h1>
+    <h1 class="titulo__header">Bienvenido al diccionario <br> El Portavoz Chocoano: <br> "Un dialecto que une territorios"</h1>
 
 
 	<!--BUSCADOR-->
@@ -37,7 +37,7 @@
 			<span class="span"><em></em></span>
 		</div>
 		<div class="contenido__titulos">
-			<h2 class="contenido__titulos--h2">Palabras Que deberias conocer</h2>
+			<h2 class="contenido__titulos--h2">Palabras que deberias conocer</h2>
 			<h3 class="contenido__titulos--h3">Aprende un poco sobre las palabras de nuestro territorio</h3>
 		</div>
 	</section>
@@ -45,44 +45,27 @@
 		<div class="splide">
 			<div class="splide__track centrado">
 				<ul class="splide__list">
+					
+					{% for m in muestra %}						
 					<li class="splide__slide">
 						<div class="splide__element">
-							<a href="#">Titulo 1.</a>
-						<br>
-						<br>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nobis suscipit, totam repudiandae officia, vero debitis eaque cupiditate distinctio rem quia repellat ipsum.</p>
-						<br>
-						<br>
-						<a href="#">+ informacion</a>
-					</div>
-				</li>
-				<li class="splide__slide">
-					<div class="splide__element">
-						<a href="#">Titulo 2.</a>
-						<br>
-						<br>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nobis suscipit, totam repudiandae officia, vero debitis eaque cupiditate distinctio rem quia repellat ipsum.</p>
-						<br>
-						<br>
-						<a href="#">+ informacion</a>
-					</div>
-				</li>
-				<li class="splide__slide">
-					<div class="splide__element">
-						<a href="#">Titulo 3.</a>
-						<br>
-						<br>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nobis suscipit, totam repudiandae officia, vero debitis eaque cupiditate distinctio rem quia repellat ipsum.</p>
-						<br>
-						<br>
-						<a href="#">+ informacion</a>
-				</div>
-			</li>
-			</ul>
+							<p class="splide__element--a">{{ m.nombre }} <span class="span__tipo">({{ m.clasificacion }})</span></p>
+							<br>
+							<br>
+							<p>{{ m.significado }}</p>
+							<br>
+							<br>
+							<!--
+								<a href="#">+ informacion</a>
+							-->
+						</div>
+					</li>	
+					{% endfor %}						
+				</ul>
+			</div>
 		</div>
-	</div>
-</article>
-<!--PALABRASMAS BUSCADAS-->
+	</article>
+	<!--PALABRASMAS BUSCADAS-->
 </main>
 
 

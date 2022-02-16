@@ -8,7 +8,6 @@
     --blanco: #fff;
     --negro: #000;
     --gris: #DDDDDD;
-
     
     --grisNeomorfismo: #f8f8f8;
 
@@ -77,6 +76,11 @@ em {
     box-shadow:  0px 0px 15px 7px rgba(0, 0, 0, 15.5%);
     /* -14px 0px 2px #f8f8f8, 14px 0px 2px #f8f8f8 */
 }
+.splide__element--a{
+    color: #7162fe; 
+    font-family:secundariaRegular;
+    font-size: 23px;
+}
 .splide__element a{
     color: #7162fe; 
     font-family:secundariaRegular;
@@ -85,6 +89,9 @@ em {
 .splide__element p{
     font-size: 18px; 
     font-family:secundariaRegular;
+}
+.span__tipo{
+    color: var(--gris);
 }
 
 /*--> Media Query's <--*/

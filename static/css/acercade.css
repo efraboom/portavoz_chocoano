@@ -1,4 +1,15 @@
+:root {
+    --blanco: #fff;
+    --negro: #333333;
+    --gris: #DDDDDD;
+    --HeaderDegradoUno: #7162FE;
+    --HeaderDegradoDos: #746eff;
 
+    --paddingBoton: 1.25rem 2.4rem;
+
+    --BotonBuscar: #FFD523;
+    --BotonBuscarHover: #FFC107;
+}
 
 /*ACERCA DE ESTILOS*/
 @font-face {
@@ -12,8 +23,9 @@
     justify-content: space-between;
 }
 .introduccion__titulo {
-    font-size: 3.5rem;
-    color: black;
+    font-size: 5rem;
+    color: var(--negro);
+    text-align: center;
     transition: all .5s ease-in-out;
 }
 .xy {
@@ -35,7 +47,7 @@
 .acerca__titulo, .apoya__titulo {
     font-size: 3rem;
     padding-bottom: .2rem;
-    color: black;
+    color: var(--negro);
     transition: all .5s ease-in-out;
 }
 .acerca__titulo--estilo, .apoya__titulo--estilo {

@@ -3,14 +3,14 @@
 <div class="content">
     <div class="paginate">
         {% if verbal.has_previous %}
-                <a class="page__enlace" href="?page=1">&laquo; Primera</a>    
-                <a class="page__enlace" href="?page={{ verbal.previous_page_number}}">Anterior</a>    
+        <a class="page__enlace" href="?page=1">&laquo; Primera</a>    
+        <a class="page__enlace" href="?page={{ verbal.previous_page_number}}">Anterior</a>    
         {% endif %}
         <span class="page__span">Pagina {{ verbal.number }} de {{ verbal.paginator.num_pages }}</span>
         
         {% if verbal.has_next %}
-            <a class="page__enlace" href="?page={{ verbal.next_page_number }}">Siguiente</a>
-            <a class="page__enlace" href="?page={{ verbal.paginator.num_pages }}">Última&raquo;</a>
+        <a class="page__enlace" href="?page={{ verbal.next_page_number }}">Siguiente</a>
+        <a class="page__enlace" href="?page={{ verbal.paginator.num_pages }}">Última&raquo;</a>
         {% endif %}
     </div>
 </div>

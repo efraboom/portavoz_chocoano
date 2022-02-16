@@ -64,7 +64,11 @@
     opacity: .92;
     transition: opacity .4s ease;
 }
-
+.contenedor__buscador {
+    position: relative;
+    top: 3rem;
+    margin-bottom: 5rem;
+}
 /*--> Media Query's <--*/
 /* Para celulares */
 

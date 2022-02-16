@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     height: 34rem;
     /*margin-top: 4.8rem;*/
     width: 100%;
@@ -32,44 +32,20 @@
 .footer__titulo {
     font-size: 1.3rem;
     color: var(--blanco);
-    text-transform: uppercase;
     transition: all .4s ease;
-}
-.footer__titulo:hover {
-    color: var(--grisFooter);
+    text-align: center;
 }
 .footer__redes {
     position: relative;
     top: 2rem;
-    gap: 2.8rem;
+    gap: 1rem;
     transition: all .4s ease;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+
 }
-.footer__redes--enlace:not(.fa-instagram) {
-    color: var(--blanco);
-    font-size: 1.5rem;
-}
-.fa-facebook-f, .fa-instagram, .fa-twitter {
-    transition: all .4s ease-in-out;
-}
-.footer__redes--enlace:hover .fa-facebook-f, .footer__redes--enlace:hover .fa-instagram, .footer__redes--enlace:hover .fa-twitter {
-    /* transform: translateY(-15px) scale(1.5); */
-    transform: scale(2);
-    transition: all .4s ease-in-out;
-}
-.footer__redes--enlace:hover .fa-facebook-f {
-    color: #3b5998;
-}
-.fa-instagram {
-    font-size: 1.6rem;
-    border-radius: 4rem;
-    color: var(--blanco);
-}
-.footer__redes--enlace:hover .fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-}
-.footer__redes--enlace:hover .fa-twitter {
-    color: #00acee;
-}
+
 .footer__copyright {
     position: relative;
     bottom: 2rem;
@@ -94,6 +70,7 @@
     max-width: 70%;
 }
 .licencia__a{
+    font-size: 1.3rem;
     color:var(--blanco);
     margin-left: 1rem;
     text-align: center;
@@ -117,13 +94,6 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-
-
-
-
-
-
 /*--> Media Query's <--*/
 
 /* Para Tablets */
@@ -133,6 +103,7 @@
     }
     .footer__titulo {
         font-size: 1.2rem;
+        max-width: 90%;
     }
 }
 /* Para celulares */
@@ -142,6 +113,7 @@
     }
     .footer__titulo {
         font-size: 1.1rem;
+        max-width: 90%;
     }
     .footer__redes {
         top: 1rem;
@@ -161,6 +133,7 @@
     }
     .footer__titulo {
         font-size: 1rem;
+        max-width: 90%;
     }
     .licencia{
         width: 90%;
