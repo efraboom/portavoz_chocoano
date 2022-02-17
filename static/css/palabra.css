@@ -85,7 +85,7 @@
     justify-content: center;
 }
 .paginate{
-    width: 45%;
+    display: inline-block;  
     padding: 1rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -133,7 +133,7 @@
         justify-content: center;
     }
     .paginate{
-        width: 60%;
+        max-width: 90%;
         padding: 1rem;
         text-align: center;
         margin-bottom: 2rem;
@@ -179,7 +179,7 @@
         justify-content: center;
     }
     .paginate{
-        width: 90%;
+        max-width: 90%;
         padding: 1rem;
         text-align: center;
         margin-bottom: 2rem;
@@ -213,6 +213,14 @@
         grid-template-columns: 1fr;
         gap: 2rem;
         width: 90%;
+    }
+    .paginate{
+        max-width: 90%;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
     }
 }
 

@@ -91,7 +91,7 @@ em {
     font-family:secundariaRegular;
 }
 .span__tipo{
-    color: var(--gris);
+    color: #969696;
 }
 
 /*--> Media Query's <--*/
