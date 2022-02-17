@@ -3,6 +3,10 @@
     font-family: fuentePrincipal;
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: secundariaBold;
+    src: url(../fonts/M_PLUS/MPLUS1p-Bold.ttf);
+}
 :root {
     --blanco: #fff;
     --negro: #333333;
@@ -273,20 +277,26 @@ input[type=text]:placeholder-shown ~ .borrar{ /* :placeholder-shown: comprueba s
     .menu__enlaces {
         position: fixed;
         max-width: 40rem;
-        width: 100%;
+        width: 80vw;
         top: 6.5rem;
         bottom: 0;
         right: 0;
-        background-color: var(--blanco);
+
+
+
+        background-color: rgba(113, 96, 254, .3);
+        backdrop-filter: blur(10px);
         display: grid;
         grid-auto-rows: max-content;
         transform: translateX(100%);
     }
     .menu__enlace {
-        padding: 2.5rem 0;
+        padding: 2rem 0;
         padding-left: 3rem;
-        font-size: 1.4rem;
-        color: var(--negro);
+        font-size: 1.6rem;
+        font-family: secundariaBold;
+        color: #333333;
+
         height: auto;
     }
     .menu__enlace:hover {
@@ -295,7 +305,7 @@ input[type=text]:placeholder-shown ~ .borrar{ /* :placeholder-shown: comprueba s
     .menu__enlaces--mostrado {
         transition: transform .5s;
         transform: unset;
-        width: 100%;
+        width: 80vw;
     }
 }
 .abajo {
