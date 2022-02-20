@@ -12,7 +12,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = [
-    '167.172.147.95',
+    '159.223.129.103',
     'www.elportavozchocoano.com',
     'elportavozchocoano.com'
 ] 
