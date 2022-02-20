@@ -12,7 +12,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = [
-    '159.203.186.30'
+    '192.241.159.31',
+    'www.elportavozchocoano.com',
+    'elportavozchocoano.com'
 ] 
 
 
@@ -118,8 +120,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'static/admin'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 #STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
