@@ -1,1 +1,0 @@
-/home/efracm15/Escritorio/Diccionario_Chocoano/static/js/app.js

@@ -1,1 +1,0 @@
-/home/efracm15/Escritorio/Diccionario_Chocoano/vrt/lib/python3.8/site-packages/import_export/static/import_export/action_formats.js
