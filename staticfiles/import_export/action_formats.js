@@ -1,0 +1,1 @@
+/home/efra/portavoz_chocoano/env/lib/python3.8/site-packages/import_export/static/import_export/action_formats.js

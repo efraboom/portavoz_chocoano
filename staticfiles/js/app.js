@@ -1,0 +1,1 @@
+/home/efra/portavoz_chocoano/static/js/app.js

@@ -1,0 +1,59 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% load static %}<!--CARGANDO ARCHIVOS ESTATICOS-->
+
+
+{% include 'partials/navegacion.html' %}<!--NAVBAR-->
+
+<div class="acerca__introduccion ">
+    <h2 class="introduccion__titulo centrado">Te damos la bienvenida a conocer<br>
+         e integrarte en nuestra cultura</h2>
+</div>
+<main class="acerca">
+    <div class="fondo">
+        <div class="xy centrado"> 
+            <section class="acerca__titulos centrado">
+                <h2 class="acerca__titulo">Acerca del proyecto</h2>
+                <siapan class="acerca__titulo--estilo"></siapan>
+
+                <p class="acerca__	parrafo">Este es el primer diccionario digital de palabras Afro-Indígenas en el Chocó, ya que nuestro departamento tiene una gran diversidad dialectal, este diccionario fue elaborado a partir de investigaciones y encuentros realizados con las comunidades Afro e Indígenas pertenecientes al Departamento del Chocó, con ello salvaguardaremos la memoria oral tradicional de nuestros ancestros en la utilización de la jerga chocona. <br>
+                La creación de este diccionario enriquecerá el proceso de formación dialectal en la comunidad y a su vez se engrandecerán los procesos de lectura, oralidad y escritura en la región.</p>
+            </section>
+
+            <img src="{% static 'img/fondo.svg' %}" class="acerca__imagen centrado" alt="">
+        </div>
+    </div>
+    
+        <article class="apoya centrado">
+            
+            <section class="apoya__titulos">
+                <h2 class="apoya__titulo">Nos Apoyan</h2>
+                <span class="apoya__titulo--estilo"></span>
+                <p class="apoya__parrafo">Este es un proyecto ganador en la beca "Desarrollo y divulgación de contenidos locales, en Bibliotecas Públicas adscritas a la Red Nacional de Bibliotecas Públicas de Colombia" con el apoyo del Ministerio De Cultura, realizado por la Biblioteca Departamental Arnoldo de los Santos Palacios Mosquera.Esta investigacion fuee posible gracias a la colaboracion de: Ariel Renteria (Pastro), Diana Palacios Londoño y Luz Moreno.</p>
+            </section>
+            <section class="empresa MdC">
+                <a href="https://www.mincultura.gov.co/" target="_blank" rel="noreferrer noopener"><img src="{% static 'img/Logo-Mincultura.png' %}" class="empresa__img" alt=""></a>
+                
+                <!--    
+                <h3 class="empresa__titulo">Ministerio de Cultura</h3>
+                    <p class="empresa__descripcion">Lorem ipsum dolor sit amet.</p> -->
+            </section>
+            <section class="empresa RnB">
+                <a href="https://bibliotecanacional.gov.co/es-co" target="_blank" rel="noreferrer noopener"><img src="{% static 'img/Red_Nacional_Bibliotecas.svg' %}" class="empresa__img RnB__img" alt=""></a>
+                <!-- 
+                <h3 class="empresa__titulo">Red Nacional de Bibliotecas</h3>
+                    <p class="empresa__descripcion">Lorem ipsum dolor sit amet.</p> -->
+            </section>
+            <section class="empresa">
+                <a href="http://www.aeropuertoquibdo.co/web/page/418/Biblioteca" target="_blank" rel="noreferrer noopener"><img src="{% static 'img/Logo_3.png' %}" class="empresa__img BdA" alt=""></a>
+                <!--
+                <h3 class="empresa__titulo">Biblioteca Departamental Arnoldo de Los Santos Palacios Mosquera</h3>
+                     <p class="empresa__descripcion">Lorem ipsum dolor sit amet.</p> -->
+            </section>
+    </article>
+</main>
+
+{% endblock %}

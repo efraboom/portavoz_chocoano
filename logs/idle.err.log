@@ -1,0 +1,208 @@
+[20/Feb/2022 23:27:03] "GET /acerca-de HTTP/1.1" 200 8624
+[20/Feb/2022 23:27:03] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:03] "GET /static/css/error.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/js/app.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/img/fondo.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/img/Red_Nacional_Bibliotecas.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:27:04] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:43] "GET /acerca-de HTTP/1.1" 200 8624
+[20/Feb/2022 23:36:43] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:43] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:43] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:43] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:43] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:44] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /acerca-de HTTP/1.1" 200 8624
+[20/Feb/2022 23:36:45] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/error.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45,728] - Broken pipe from ('190.217.101.219', 34802)
+
+[20/Feb/2022 23:36:45] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45,883] - Broken pipe from ('190.217.101.219', 34804)
+
+[20/Feb/2022 23:36:45] "GET /static/img/Red_Nacional_Bibliotecas.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:45,980] - Broken pipe from ('190.217.101.219', 34810)
+
+[20/Feb/2022 23:36:46] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:46] "GET /static/js/app.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:46] "GET /static/img/fondo.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:46] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:46] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:36:46] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:35] "GET / HTTP/1.1" 200 8987
+[20/Feb/2022 23:45:36] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:36] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:36,515] - Broken pipe from ('190.217.101.219', 34862)
+
+[20/Feb/2022 23:45:36,612] - Broken pipe from ('190.217.101.219', 34864)
+
+[20/Feb/2022 23:45:37] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37,352] - Broken pipe from ('190.217.101.219', 34872)
+
+[20/Feb/2022 23:45:37,353] - Broken pipe from ('190.217.101.219', 34866)
+
+[20/Feb/2022 23:45:37] "GET /static/css/error.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/js/app.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:37] "GET /static/img/humano.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:38] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:38] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:38] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:38] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /acerca-de HTTP/1.1" 200 8624
+[20/Feb/2022 23:45:41] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/error.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41,811] - Broken pipe from ('190.217.101.219', 34900)
+
+[20/Feb/2022 23:45:41] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/js/app.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:41] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/img/fondo.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/img/Red_Nacional_Bibliotecas.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:45:42] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:15] "GET /acerca-hh HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/error.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/js/app.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:16] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:17] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:17] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:17] "GET /static/icons/404.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:17] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:17] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:23] "GET / HTTP/1.1" 200 8987
+[20/Feb/2022 23:52:23] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:23] "GET /static/css/header.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:23] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:23] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:23] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/css/error.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/js/app.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:24] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:25] "GET /static/img/humano.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:25] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:25] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:25] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:25] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[20/Feb/2022 23:52:26] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET / HTTP/1.1" 200 8987
+[21/Feb/2022 00:08:32] "GET /static/css/header.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:32] "GET /static/css/error.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/js/app.js HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/img/humano.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:33] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:34] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:08:34] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:45] "GET / HTTP/1.1" 200 8987
+[21/Feb/2022 00:18:45] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/header.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/error.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/js/app.js HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/img/humano.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:46] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:47] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:47] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:47] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:18:47] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:24:05,809] - Broken pipe from ('162.142.125.220', 46490)
+
+[21/Feb/2022 00:24:05] code 400, message Bad request version ('À\x14À')
+[21/Feb/2022 00:24:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[21/Feb/2022 00:24:06] "GET / HTTP/1.1" 200 8987
+[21/Feb/2022 00:24:06,896] - Broken pipe from ('162.142.125.220', 41248)
+
+[21/Feb/2022 00:24:06] "GET / HTTP/1.1" 200 8987
+[21/Feb/2022 00:24:06] code 505, message Invalid HTTP version (2.0)
+[21/Feb/2022 00:24:06] "PRI * HTTP/2.0" 505 -
+[21/Feb/2022 00:40:31] "GET / HTTP/1.1" 200 8987
+[21/Feb/2022 00:40:31] "GET /static/css/not_found.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:31] "GET /static/css/header.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:32] "GET /static/css/inicio.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:32] "GET /static/css/footer.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:32] "GET /static/css/palabra.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/css/error.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/css/acercade.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/css/all.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/css/fontawesome.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/css/splide.min.css HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/js/splide.min.js HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/js/app.js HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/icons/menu_blanco.svg HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/img/Logo-Mincultura.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/img/humano.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:33] "GET /static/img/BNC_Blanco.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:34] "GET /static/img/Logo_3.png HTTP/1.1" 200 5876
+[21/Feb/2022 00:40:34] "GET /static/icons/megafono.png HTTP/1.1" 200 5876
